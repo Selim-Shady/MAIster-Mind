@@ -14,7 +14,7 @@ L'usine propose 2 scripts selon ta cible et ton objectif (Code seul vs Code + Te
 | Script | Gestion des Tests |
 |---|---|
 | `MAIsterMind-code` | Production uniquement |
-| `MAIsterMind-code` | Production + Tests |
+| `MAIsterMind-test` | Production + Tests |
 
 ---
 
