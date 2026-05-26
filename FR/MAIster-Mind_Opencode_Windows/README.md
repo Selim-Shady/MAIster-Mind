@@ -93,6 +93,26 @@ tmux attach -t oc-factory
 
 ---
 
+## Personnaliser les skills
+
+Vous pouvez ajouter vos propres skills ou modifier ceux existants. Chaque skill est un dossier `.agents/skills/<nom>/SKILL.md` avec un frontmatter YAML (`name`, `description`) et des instructions comportementales.
+
+| À faire | À ne pas faire |
+|---|---|
+| ✅ Ajouter des skills (ex: `python-django-api`, `docker-setup`) | ❌ Modifier `plan/SKILL.md` ou `plan-to-blackboard/SKILL.md` |
+| ✅ Modifier les skills existants pour votre stack | ❌ Supprimer ou renommer un skill sans mettre à jour le dictionnaire |
+
+**Quand vous ajoutez un skill**, enregistrez-le dans le `STRICT SKILLS DICTIONARY` du fichier `plan-to-blackboard/SKILL.md` en ajoutant une entrée comme :
+
+```yaml
+"python-django-api":
+  Pour implémenter des vues Django REST Framework, des serializers, des modèles, de la config admin.
+```
+
+C'est ainsi que le générateur de blackboard sait quels skills assigner à chaque phase.
+
+---
+
 ## Optionnel: Forcer l'usage d'un modèle
 
 Aller dans .opencode

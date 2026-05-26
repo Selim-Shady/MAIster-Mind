@@ -22,6 +22,13 @@ Each preset includes:
 | `.opencode/` | Agent permissions and optional model override |
 | `need.md` | Your specification — fill this in |
 
+## Custom skills
+
+You can add your own skills or modify the existing ones. Each skill is a folder under `.agents/skills/<name>/SKILL.md`.
+
+> ⚠️ **Keep these two skills unchanged:** `plan` and `plan-to-blackboard`. They are the orchestration engine.
+> When you add a new skill, register it in the `STRICT SKILLS DICTIONARY` inside `plan-to-blackboard/SKILL.md`.
+
 ## Writing `need.md`
 
 This is the most important file. Describe exactly what you want the AI to build. Be precise, structured, and leave no room for interpretation.

@@ -92,6 +92,26 @@ The script stops after step 2 and waits for your validation. You can:
 
 ---
 
+## Customizing skills
+
+You can add your own skills or modify existing ones. Each skill is a folder under `.agents/skills/<name>/SKILL.md` with YAML frontmatter (`name`, `description`) and behavioral instructions.
+
+| Do | Don't |
+|---|---|
+| ✅ Add new skills (e.g., `python-django-api`, `docker-setup`) | ❌ Modify `plan/SKILL.md` or `plan-to-blackboard/SKILL.md` |
+| ✅ Modify existing skills to match your stack | ❌ Remove or rename skills without updating the dictionary |
+
+**When you add a skill**, register it in the `STRICT SKILLS DICTIONARY` inside `plan-to-blackboard/SKILL.md` by adding an entry like:
+
+```yaml
+"python-django-api":
+  For implementing Django REST Framework views, serializers, models, admin config.
+```
+
+This is how the blackboard generator knows which skills to assign to each phase.
+
+---
+
 ## Optional: Force model choice
 
 Go to .opencode
