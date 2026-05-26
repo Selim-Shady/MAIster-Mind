@@ -7,6 +7,18 @@
 
 ---
 
+## Quick start
+
+Pick a preset folder and copy its contents to your project root:
+
+- `MAIsterMind-code` — You want the AI to write new code
+- `MAIsterMind-test` — You want the AI to write tests for existing code
+- `.agents/` — Skills that teach the AI how to behave
+- `.opencode/` — Agent permissions and optional model override
+- `need.md` — Your specification — fill this in
+
+---
+
 ## 🚀 Script Architecture
 
 The factory offers 2 **compiled binaries** depending on your target and goal (Code only vs Code + Tests):

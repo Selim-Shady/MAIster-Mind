@@ -9,18 +9,14 @@ MAIster-Mind is an AI-assisted development framework that orchestrates opencode 
 
 Pick a preset folder and copy its contents to your project root:
 
-| Preset | When to use |
-|---|---|
-| `MAIsterMind-code` | You want the AI to write new code |
-| `MAIsterMind-test` | You want the AI to write tests for existing code |
+- `MAIsterMind-code` — You want the AI to write new code
+- `MAIsterMind-test` — You want the AI to write tests for existing code
 
 Each preset includes:
 
-| File / Folder | Purpose |
-|---|---|
-| `.agents/` | Skills that teach the AI how to behave |
-| `.opencode/` | Agent permissions and optional model override |
-| `need.md` | Your specification — fill this in |
+- `.agents/` — Skills that teach the AI how to behave
+- `.opencode/` — Agent permissions and optional model override
+- `need.md` — Your specification — fill this in
 
 ## Custom skills
 

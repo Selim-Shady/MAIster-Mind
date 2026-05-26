@@ -1,6 +1,6 @@
 ---
 name: architecture
-description: force AI to code as you me
+description: force AI to follow architecture
 ---
 
 # Screaming Architecture : Domain-First Structure

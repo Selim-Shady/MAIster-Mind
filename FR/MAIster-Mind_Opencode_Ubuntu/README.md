@@ -7,6 +7,18 @@
 
 ---
 
+## Quick start
+
+Choisis un dossier preset et copie son contenu à la racine de ton projet :
+
+- `MAIsterMind-code` — Pour que l'IA écrive du nouveau code
+- `MAIsterMind-test` — Pour que l'IA écrive des tests pour du code existant
+- `.agents/` — Skills qui apprennent à l'IA comment se comporter
+- `.opencode/` — Permissions de l'agent et surcharge optionnelle du modèle
+- `need.md` — Ta spécification — à remplir
+
+---
+
 ## 🚀 Architecture des Scripts
 
 L'usine propose 2 **binaires compilés** selon ta cible et ton objectif (Code seul vs Code + Tests) :
