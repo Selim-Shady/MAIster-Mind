@@ -11,3 +11,6 @@ sudo apt install -y nodejs
 
 # 3. Installation globale d'OpenCode
 # Installe opencode: https://opencode.ai/docs/fr
+
+# 4. If needed, add permission on your scripts
+# As example: chmod +x MAIsterMind-code

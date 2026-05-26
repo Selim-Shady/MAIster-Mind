@@ -89,3 +89,17 @@ The script stops after step 2 and waits for your validation. You can:
 * **Force AI shutdown:** `tmux kill-session -t oc-factory`
 * **Resume after a crash:** Relaunch the binary, phases marked `DONE` will be automatically skipped.
 * **Blocked on a confirmation:** Check that your `factory.md` agent has write permissions in `allow` mode.
+
+---
+
+## Optional: Force model choice
+
+Go to .opencode
+Add the model in opencode.json
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "opencode/deepseek-v4-flash"
+}
+```

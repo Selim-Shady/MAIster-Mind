@@ -11,3 +11,6 @@ sudo apt install -y nodejs
 
 # 3. Global installation of OpenCode and authentication in WSL
 # Install opencode: https://opencode.ai/docs/en
+
+# 4. If needed, add permission on your scripts
+# As example: chmod +x MAIsterMind-code

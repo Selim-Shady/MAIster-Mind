@@ -22,7 +22,7 @@ L'usine propose 2 scripts selon ta cible et ton objectif (Code seul vs Code + Te
 
 Le modèle se configure directement dans OpenCode (via `/model` dans le TUI ou dans `.opencode/opencode.json`). 
 * **Cloud :** Assure-toi d'avoir configuré ton provider avec ta clé API dans ton environnement WSL.
-* **Local :** Lance Ollama en arrière-plan avec ton modèle avant d'exécuter un binaire. Assure-toi qu'Ollama est accessible depuis WSL avant d'exécuter un script local.
+* **Local :** Lance Ollama en arrière-plan avec ton modèle avant d'exécuter un binaire. 
 
 ---
 
@@ -57,12 +57,6 @@ Chaque script exécute automatiquement les étapes suivantes :
 
 *Toutes les commandes s'exécutent dans ton terminal WSL (Ubuntu), dans le dossier du projet.*
 
-### 0. Pour l'usage d'un modèle local
-
-Commence par rendre Ollama accessible depuis WSL. Le plus simple est de lancer Ollama côté Windows, puis de vérifier depuis le terminal WSL que l'API répond correctement.
-
-Tant que la configuration d'Ollama reste active et accessible depuis WSL, tu peux exécuter le binaire depuis le terminal WSL pour lancer MAIster-Mind avec ton modèle local.
-
 ### 1. Préparer le besoin
 Crée et décris ton besoin fonctionnel sans ambiguïté dans `need.md`.
 
@@ -96,3 +90,17 @@ tmux attach -t oc-factory
 * **Suivre l'avancement du YAML :** `watch -n 2 cat blackboard.yaml`
 * **Forcer la fermeture de l'IA :** `tmux kill-session -t oc-factory`
 * **Reprendre après un crash :** Relance le binaire, les phases marquées `DONE` seront automatiquement ignorées.
+
+---
+
+## Optionnel: Forcer l'usage d'un modèle
+
+Aller dans .opencode
+Intégrer le modèle dans opencode.json
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "opencode/deepseek-v4-flash"
+}
+```

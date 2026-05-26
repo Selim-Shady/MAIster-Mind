@@ -3,7 +3,7 @@
 
 **MAIster-Mind** is an automated code factory that drives the OpenCode AI agent via `tmux` directly on Ubuntu. Its purpose is to automate development (from functional requirements to final code) through a structured and human-validated pipeline, thus avoiding exclusive dependence on the most expensive remote models.
 
-> 📦 **This is a compiled binary version!** No Python installation required. See `INSTALL.md` for minimal setup.
+> 📦 See `INSTALL.md` for minimal setup.
 
 ---
 
@@ -87,3 +87,17 @@ This binary was compiled with **Nuitka** to protect the intellectual property of
 - The source code is **not accessible** from the binary
 - All Python dependencies (PyYAML, etc.) are **included** in the binary
 - The binary is **standalone** and does not require Python to be installed on the target system
+
+---
+
+## Optional: Force model choice
+
+Go to .opencode
+Add the model in opencode.json
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "opencode/deepseek-v4-flash"
+}
+```

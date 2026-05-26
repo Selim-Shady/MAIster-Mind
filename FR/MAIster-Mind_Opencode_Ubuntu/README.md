@@ -3,7 +3,7 @@
 
 **MAIster-Mind** est une usine à code automatisée qui pilote l'agent IA OpenCode via `tmux` directement sous Ubuntu. Son but est d'automatiser le développement (du besoin fonctionnel jusqu'au code final) à travers un pipeline structuré et validé par l'humain, évitant ainsi la dépendance exclusive aux modèles distants les plus coûteux.
 
-> 📦 **Version binaire compilée !** Aucune installation de Python requise. Voir `INSTALL.md` pour la configuration minimale.
+> 📦 Voir `INSTALL.md` pour la configuration minimale.
 
 ---
 
@@ -22,7 +22,7 @@ L'usine propose 2 **binaires compilés** selon ta cible et ton objectif (Code se
 
 Le modèle se configure directement dans OpenCode (via `/model` dans le TUI ou dans `.opencode/opencode.json`).
 * **Cloud :** Assure-toi d'avoir configuré ton provider.
-* **Local :** Lance Ollama en arrière-plan avec ton modèle avant d'exécuter un binaire. Assure-toi qu'Ollama est accessible depuis WSL avant d'exécuter un script local.
+* **Local :** Lance Ollama en arrière-plan avec ton modèle avant d'exécuter un binaire. 
 
 ---
 
@@ -87,3 +87,17 @@ Ce binaire a été compilé avec **Nuitka** pour protéger la propriété intell
 - Le code source **n'est pas accessible** depuis le binaire
 - Toutes les dépendances Python (PyYAML, etc.) sont **intégrées** dans le binaire
 - Le binaire est **autonome** et ne nécessite pas d'avoir Python installé sur le système cible
+
+---
+
+## Optionnel: Forcer l'usage d'un modèle
+
+Aller dans .opencode
+Intégrer le modèle dans opencode.json
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "opencode/deepseek-v4-flash"
+}
+```
